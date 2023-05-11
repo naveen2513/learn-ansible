@@ -29,6 +29,13 @@
       vars:
         URL: task.example.com
 
+# vars from roles
+- name: vars form roles
+  hosts: all
+  vars:
+    - URL_PLAY: play.example.com
+  roles:
+    - sample
 
 
 
