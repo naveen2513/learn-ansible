@@ -17,4 +17,14 @@
       vars:
         URL: task.example.com
 
-#
+  #demo on load vars from files
+- name: load vars from file
+  hosts: all
+  var_file:
+    - exvars.yml
+  tasks:
+    - name: Print URL
+      ansible.builtin.debug:
+        msg: URL - {{ URL }}
+
+
