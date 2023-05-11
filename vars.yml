@@ -8,7 +8,7 @@
           msg: URL - {{ URL }}
 
 #demo on load vars from files
-- name: load vars from  a file
+- name:  demo  on load vars from  a file
   hosts: all
   vars_files:
     - exvars.yml
@@ -17,6 +17,7 @@
       ansible.builtin.debug:
         msg: URL - {{ URL }}
 
+# var files only support on paly level
 
   #Demo on task level
 - name: demo on task level variables
