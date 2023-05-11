@@ -1,14 +1,4 @@
-- name: print hello world
-  ansible.builtin.debug:
-    msg: hello from role sample
+URL: role.example.com
 
 
-
-- name: print variable from role
-  ansible.builtin.debug:
-    msg: URL - {{ URL }}
-
-- name: print variable from play
-  ansible.builtin.debug:
-    msg: URL_PLAY - {{ URL_PLAY }}
 
