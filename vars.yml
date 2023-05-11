@@ -20,7 +20,7 @@
  #demo on load vars from files
 - name: load vars from  a file
   hosts: all
-  var_files:
+  vars_files:
     - exvars.yml
   tasks:
     - name: Print URL
